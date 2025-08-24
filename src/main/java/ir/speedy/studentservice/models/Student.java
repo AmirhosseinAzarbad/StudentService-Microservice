@@ -18,4 +18,8 @@ public class Student {
     private String fatherName;
     private String address;
     private Integer age;
+
+    @OneToOne
+    @JoinColumn(name = "library_id")
+    private Library library;
 }
